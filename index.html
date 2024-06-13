@@ -6,7 +6,14 @@
     </head>
     <body>
         <h1>Homepage</h1>
-        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a>
+        <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a> 
+        
+        <br/>
         <a href="pages/about.html">About</a>
+        
+        <!-- When a link is opened without the "rel = noopener noreferrer" attribute, it gives the opened tab access to manipulate the parent tab -->
+        <p><a href="pages/about.html" target="_blank">Vulnerable target using html link to open the new page</a></p>
+        <button onclick="window.open('pages/about.html')">Vulnerable target using javascript to open the new page</button>
+
     </body>
 </html>

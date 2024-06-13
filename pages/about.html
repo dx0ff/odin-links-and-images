@@ -7,5 +7,15 @@
 
   <body>
     <h1>About Page</h1>
+
+    <!-- Whent the button is clicked, it manipulates the parent tab to open the link attached -->
+    <button onclick="window.opener.location='https://www.example.com'">click me</button>
+
+    <!-- The script below automatically runs anytime this page is opened without the "rel = noopener noreferrer" attribute -->
+    <script>
+      if (window.opener) {
+        window.opener.location = "http://www.example.com";
+      }
+    </script>
   </body>
 </html>
