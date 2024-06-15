@@ -3,15 +3,42 @@
     <head>
         <title>links-and-images</title>
         <meta charset="UTF-8">
+
+        <style>
+            .nav ul{
+                text-transform: uppercase;
+                font: bold 30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+                margin: 0px;
+                padding: 0px;
+                
+            }
+            .nav li{
+                padding: 10px;
+                display: inline-block;
+                
+            }
+            .tab {
+                text-decoration: none;
+            }
+            .nav a{
+                padding-right: 5px;
+                background: #395870;
+                background: linear-gradient(#49708f, #293f50);
+                padding: 12px 20px;
+                color: #fff
+            }
+        </style>
     </head>
     <body>
         <h1>Homepage</h1>
         <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">About The Odin Project</a>
 
         <br/>
-        <a href="pages/about.html">About</a>
-
+        <ul class="nav">
+            <li><a href="pages/about.html" class="tab">About</a></li>
+            <li><a href="./pages/image-formats.html" class="tab">Learn About The Four Image Formats</a></li>
+        </ul>
         <br>
-        <img src="images/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg"
+        <img src="images/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg" alt="The Odin Dog">
     </body>
 </html>
